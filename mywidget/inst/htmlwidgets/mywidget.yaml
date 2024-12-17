@@ -1,0 +1,9 @@
+name: mywidget
+version: 1.0.0
+dependencies:
+ - name: d3-funnel
+   version: 2.1.0
+   src: htmlwidgets/lib
+   script:
+     - d3-funnel.min.js #this is the minified version of the javascript
+
