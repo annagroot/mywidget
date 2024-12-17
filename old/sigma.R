@@ -20,3 +20,8 @@ library(mywidget)
 mywidget("Hello, genius!")                   # test the widget
 
 mywidget
+
+
+data <- data.frame(a=c('vist','order','paid'), b=c(116634,2007,435))
+
+mywidget(data)

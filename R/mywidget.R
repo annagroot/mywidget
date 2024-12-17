@@ -7,12 +7,15 @@
 #' @export
 #'
 mywidget <- function(data, options = NULL, width = NULL, height = NULL) {
+  colnames(data) <- c("k", "v")
   htmlwidgets::createWidget(
     name = "mywidget",
     x = list(data = data, options = options),
     width = width,
     height = height,
-    package = "mywidget"
+    package = "mywidget",
+    sizingPolicy = htmlwidgets::sizingPolicy(viewer.fill = FALSE
+    )
   )
 }
 
