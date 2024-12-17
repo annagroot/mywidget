@@ -6,7 +6,11 @@
 #'
 #' @export
 #'
-mywidget <- function(data, options = NULL, width = NULL, height = NULL) {
+mywidget <- function(data, options, width = NULL, height = NULL) {
+
+
+
+
   colnames(data) <- c("k", "v")
   htmlwidgets::createWidget(
     name = "mywidget",
